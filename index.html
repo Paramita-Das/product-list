@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class='title-header'>
+            <h1 class="title-text">VENIA</h1>
+        </div>
+        <div class='tab-header'>
+            <h2 class="text">Home</h2>
+            <h2 class="text">Women</h2>
+            <h2 class="text">Men</h2>
+            <h2 class="text">Smart gear</h2>
+            <h2 class="text">Accessories</h2>
+        </div>
+        <div></div>
+    </div>
+    
+    <div>
+        <div class="black-box">
+            <h1 class="big-text">Men’s Outerwear</h1>
+        </div>
+    </div>
+    
+    <div class="textRow">
+        <div>
+            <input type="text" id="search-input" placeholder="Search for products..." />
+        </div>
+        <div>
+            <h4 id="results-count">0 Results</h4>
+        </div>
+        <div>
+            <label for="sort-price">Sort by Price: </label>
+            <select id="sort-price">
+                <option value="low-to-high">Low to High</option>
+                <option value="high-to-low">High to Low</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="imageRow">
+        <div class="filter-container">
+            <h2>Filters</h2>
+            <div>
+                <h4>Categories</h4>
+                <div id="category-filters"></div>
+            </div>
+        </div>
+        <div id="products-container" class="imageRow"></div>
+    </div>
+
+    <div class="button">
+        <button id="load-more-button">Load more</button>
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>

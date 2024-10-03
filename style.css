@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: #1363DF;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.title-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 1em;
+    cursor: pointer;
+}
+
+.title-text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 10px;
+}
+
+.black-box {
+    background-color: #1B252C;
+    width: 100%;
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+.big-text {
+    font-size: 24px;
+    color: #FFFFFF;
+    padding: 12%;
+    text-align: center;
+}
+
+.textRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.filter-container {
+    width: 20%;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.imageRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 10px;
+}
+
+#products-container .product-item {
+    flex: 1 1 calc(33.333% - 40px);
+    max-width: calc(33.333% - 40px);
+    box-sizing: border-box;
+    padding: 8px;
+    background-color:  #f4f4f4;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    justify-content: flex-end;
+    display: flex;
+    margin: 3%;
+}
+
+#products-container {
+    width: 100%;
+    flex: 1;
+}
+
+
+@media (max-width: 767px) {
+    .title-header {
+        justify-content: center;
+        flex: 1 1 100%;
+    }
+
+    .tab-header {
+        justify-content: center;
+        flex: 1 1 100%;
+    }
+
+    .text {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .black-box {
+        width: 90%;
+    }
+
+    .big-text {
+        font-size: 20px;
+    }
+
+    .textRow {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageRow {
+        justify-content: center;
+    }
+
+    .filter-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    #products-container .product-item {
+        flex: 1 1 calc(50% - 20px); 
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .tab-header {
+        justify-content: space-around;
+    }
+
+    .textRow {
+        justify-content: space-evenly;
+    }
+
+    .imageRow {
+        justify-content: space-evenly;
+    }
+
+    .big-text {
+        font-size: 22px;
+    }
+
+    .filter-container {
+        width: 35%; 
+    }
+
+    #products-container .product-item {
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .header {
+        padding: 20px 30px;
+    }
+
+    .tab-header .text {
+        font-size: 16px;
+    }
+
+    .textRow {
+        justify-content: space-between;
+    }
+
+    .filter-container {
+        width: 30%; 
+    }
+
+    #products-container .product-item {
+        flex: 1 1 calc(33.333% - 20px);
+        max-width: calc(33.333% - 20px);
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .header {
+        padding: 20px 50px;
+    }
+
+    .tab-header .text {
+        font-size: 18px;
+    }
+
+    .textRow {
+        padding: 0 50px;
+    }
+
+    .imageRow {
+        justify-content: flex-start;
+    }
+
+    .filter-container {
+        width: 25%; 
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+    .header {
+        padding: 20px 70px;
+    }
+
+    .tab-header .text {
+        font-size: 18px;
+    }
+
+    .textRow {
+        justify-content: space-between;
+        padding: 0 70px;
+    }
+
+    .filter-container {
+        width: 20%; 
+    }
+
+    #products-container .product-item {
+        flex: 1 1 calc(25% - 20px);
+        max-width: calc(25% - 20px);
+    }
+}
+
+@media (min-width: 1920px) {
+    .header {
+        padding: 20px 90px;
+    }
+
+    .tab-header .text {
+        font-size: 20px;
+    }
+
+    .textRow {
+        justify-content: space-between;
+        padding: 0 90px;
+    }
+
+    .filter-container {
+        width: 18%; 
+    }
+
+    #products-container .product-item {
+        flex: 1 1 calc(20% - 20px); 
+        max-width: calc(20% - 20px);
+    }
+}
